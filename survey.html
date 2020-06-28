@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Poppins|Roboto|Sen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">MAIT Graduate Feedback Form</h1>
+        <p id="description">
+          Please take time to provide valuable feedback which will be used to
+          make the institution better
+        </p>
+      </header>
+
+    
+
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name:</label><br />
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name here"
+          class="makingwide"
+          required
+        />
+
+        <label for="email" id="email-label">E-Mail:</label><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email"
+          class="makingwide"
+          required
+        /><br />
+
+        <label for="number" id="number-label">Age:</label><br />
+        <input
+          type="number"
+          id="number"
+          class="makingwide"
+          min="18"
+          max="30"
+          value="age"
+          placeholder="Age"
+        />
+
+        <label for="dropdown">Choose Your Stream:</label>
+        <select id="dropdown" class="makingwide" required>
+          <option disabled value>Select Your Branch</option>
+          <option value="Mechanical ">Mechanical</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Electrical ">Electrical</option>
+          <option value="Civil">Civil</option>
+          <option value="Aeronautical">Aeronautical</option>
+        </select>
+
+        <div class="radio">
+          <p>Please Select Your Gender:</p>
+
+          <input type="radio" name="gender" id="male" value="Male" selected />
+          <label for="male">Male</label><br />
+
+          <input type="radio" name="gender" id="female" value="Female" />
+          <label for="female">Female</label><br />
+          <input
+            type="radio"
+            name="gender"
+            id="prefer"
+            value="Prefer not to say"
+          />
+          <label for="prefer">Prefer Not to Say</label>
+        </div>
+
+        <div class="checkbox">
+          <p>Which Aspect needs more Improvement</p>
+          <input
+            type="checkbox"
+            name="feedbackbox"
+            id="F&A"
+            value="Facaulty & Assisance"
+          />
+          <label for="F&A">Facaulty & Assisance</label><br />
+
+          <input
+            type="checkbox"
+            name="feedbackbox"
+            id="SF"
+            value="Sports Facility"
+          />
+          <label for="SF">Sports Facility</label><br />
+
+          <input
+            type="checkbox"
+            name="feedbackbox"
+            id="CS"
+            value="Cultural Societies"
+          />
+          <label for="CS">Cultural Societies</label><br />
+
+          <input
+            type="checkbox"
+            name="feedbackbox"
+            id="LL"
+            value="Lab Facilities & Library"
+          />
+          <label for="LL">Library & Lab facility</label><br />
+
+          <input
+            type="checkbox"
+            name="feedbackbox"
+            id="Ag"
+            value="Administration Guidance"
+          />
+          <label for="Ag">Administration Guidance</label><br />
+        </div>
+
+        <div class="textarea">
+          <p>Any Suggestion & Complaints?</p>
+          <textarea
+            name="comment"
+            cols="60"
+            rows="5"
+            form="survey-form"
+          ></textarea>
+        </div>
+        <button type="submit" id="submit" form="survey-form">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
